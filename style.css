@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif&family=Rubik+Maps&family=Silkscreen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    background-color: #323375;
+    justify-content: space-around;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    
+}
+
+.pagetitle{
+    
+    font-size: x-large;
+    font-style: italic;
+    font-family: 'Silkscreen';
+    color: #c0b093;
+}
+
+.links a{
+    margin-left: 1.5vw;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #F0E7E9;
+    font-size: 20px;
+    transition: .10s;
+}
+
+a:hover{
+    text-decoration: underline;
+    transition: .10s;
+}
+
+.banner{
+    margin-top: 7.5vw;
+    background-color: rgba(175, 180, 207, 0.5);
+    padding: 4vw;
+}
+
+.bannerhead{
+    font-family: 'Silkscreen';
+    font-size: 36px;
+}
+
+.bannerhead, p{
+    text-align: center;
+    font-weight: bold;
+}
+
+p, ul{
+    font-family:'Montserrat';
+    font-size: 15px;
+}
+
+ul{
+    margin-top: 3vw;
+    padding-left: 4vw;
+}
+
+footer{
+    width: 100vw;
+    position: fixed;
+    bottom: 0vw;
+    text-align: center;
+    background-color: #466fad;
+    
+}
+
+.icon{
+	background: url(images/sprite3.png) no-repeat;
+	width: 66px;
+	height: 66px;
+    display: inline-block;
+}
+
+#twt{
+    background-position: -66px -72px;
+}
+
+#ig{
+    background-position: -290px -221px;
+}
+
+#fb{
+    background-position: -439px -146px;
+}
+
+#yt{
+    background-position: -439px -221px;
+}
+
+#bgvid{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+        background-color: #240046;
+    }
+    .pagetitle{
+        background-color: rgba(175, 180, 207, 0.5);
+        padding: 1vw;
+        color: white;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute; 
+        background-color:#466fad;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+        min-width:100vw;
+    }
+    .links a{
+        color: black;
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+        display: block;
+    }
+
+    .links a:hover{
+        background-color: #F0E7E9; 
+        transition: .7s;
+    }
+
+    nav:hover .links{
+        display: block;
+        transition: .7s;
+    }
+
+    nav:hover .pagetitle {
+        background-color: #ff7aa2;
+        transition: .7s;
+    }
+}
